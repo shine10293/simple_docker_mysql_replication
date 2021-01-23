@@ -1,12 +1,12 @@
 #!/bin/sh
 
 #make mymaster image
-docker build -t mymaster ./mymaster/
+docker build --no-cache -t mymaster ./mymaster/
 
 #sleep 10s
 
 #make myslave image
-docker build -t myslave ./myslave/
+docker build --no-cache -t myslave ./myslave/
 docker-compose -f ./docker-compose.yml up -d --remove-orphans
 
 sleep 15s
