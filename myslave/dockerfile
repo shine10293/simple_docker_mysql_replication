@@ -1,7 +1,7 @@
 FROM mysql:5.7
 
-ADD ./mysql-init-files/create.sql /docker-entrypoint-initdb.d/create.sql
-ADD ./mysql-config-files/my.cnf /etc/mysql/my.cnf
+# ADD ./mysql-init-files/create.sql /docker-entrypoint-initdb.d/create.sql
+# ADD ./mysql-config-files/my.cnf /etc/mysql/my.cnf
 
 EXPOSE 3306
 
